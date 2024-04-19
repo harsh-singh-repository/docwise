@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Docwise - Your Personal Notes App
+
+Welcome to Docwise, your ultimate destination for organizing your notes with ease! Docwise is a web-based notes application built with NEXT.js and TypeScript, offering a seamless user experience and advanced features for efficient note-taking. With Docwise, you can create, edit, and customize your notes effortlessly, backed by secure user authentication.
+
+## Features
+
+- **User Authentication**: Securely sign up, log in, and manage your account to access your notes.
+- **Create and Edit Notes**: Effortlessly create new notes or edit existing ones with a user-friendly editor.
+- **Customizable Styles**: Choose from a variety of text and background colors to personalize your notes.
+- **Bullet Points**: Easily add bullet points to organize your thoughts and ideas effectively.
+- **Preview Mode**: View your notes in a preview mode to see how they will appear to others.
+
+## Technologies Used
+
+- **NEXT.js**: The React framework for building server-rendered applications.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **Convex**: Backend service for handling user authentication and data storage.
 
 ## Getting Started
 
-First, run the development server:
+To get started with Docwise, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Clone the repository**:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   git clone https://github.com/your-username/docwise.git
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Install Dependencies**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+     cd docwise
+     npm install
 
-## Learn More
+3. **Set up environment variables**
 
-To learn more about Next.js, take a look at the following resources:
+- Create a .env file in the root directory.
+- Add the required environment variables such as API keys, database URLs, etc.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Run the application**
+  npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. **Access the application** 
+    Once the application is running, visit http://localhost:3000 in your web browser to start using Docwise.
 
-## Deploy on Vercel
+## License
+  
+  This project is licensed under the MIT License - see the LICENSE file for details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##  Acknowledgement
+  - Thanks to the creators of NEXT.js for providing an excellent framework.
+  - Special thanks to the developers of Convex for simplifying user authentication and backend    services.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

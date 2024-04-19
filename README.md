@@ -26,7 +26,8 @@ To get started with Docwise, follow these steps:
    git clone https://github.com/your-username/docwise.git
 
 2. **Install Dependencies**
-
+    
+    ```bash
      cd docwise
      npm install
 
@@ -36,6 +37,7 @@ To get started with Docwise, follow these steps:
 - Add the required environment variables such as API keys, database URLs, etc.
 
 4. **Run the application**
+  ```bash
   npm run dev
 
 5. **Access the application** 

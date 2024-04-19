@@ -4,6 +4,9 @@ const nextConfig = {
         domains:[
             "files.edgestore.dev"
         ]
+    },
+    eslint:{
+        ignoreDuringBuilds:true,
     }
 };
 

@@ -7,7 +7,7 @@ import { redirect } from "next/navigation";
 import { SearchCommand } from "@/components/modals/search-command";
 import { Navigation } from "./_components/Navigation";
 
-const mainLayout = ({children}:{children:ReactNode})=>{
+const MainLayout = ({children}:{children:ReactNode})=>{
 
     const {isAuthenticated,isLoading} = useConvexAuth();
     
@@ -38,4 +38,4 @@ const mainLayout = ({children}:{children:ReactNode})=>{
     )
 }
 
-export default mainLayout;
+export default MainLayout;

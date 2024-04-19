@@ -15,7 +15,7 @@ interface DocumentIdPageProps {
   }
 };
 
-const page = ({params}:DocumentIdPageProps) => {
+const Page = ({params}:DocumentIdPageProps) => {
 
   const Editor = useMemo(()=> dynamic(()=> import("@/components/ui/Editor"),{ssr:false}),[])
 
@@ -66,4 +66,4 @@ const page = ({params}:DocumentIdPageProps) => {
 }
 
 
-export default page;
+export default Page;

@@ -27,9 +27,9 @@ To get started with Docwise, follow these steps:
 
 2. **Install Dependencies**
     
-    ```bash
-     cd docwise
-     npm install
+     ```bash
+    cd docwise
+    npm install
 
 3. **Set up environment variables**
 
@@ -37,8 +37,9 @@ To get started with Docwise, follow these steps:
 - Add the required environment variables such as API keys, database URLs, etc.
 
 4. **Run the application**
-  ```bash
-  npm run dev
+
+    ```bash
+    npm run dev
 
 5. **Access the application** 
     Once the application is running, visit http://localhost:3000 in your web browser to start using Docwise.

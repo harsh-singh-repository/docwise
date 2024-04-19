@@ -48,4 +48,3 @@ To get started with Docwise, follow these steps:
 ##  Acknowledgement
   - Thanks to the creators of NEXT.js for providing an excellent framework.
   - Special thanks to the developers of Convex for simplifying user authentication and backend    services.
-

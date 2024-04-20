@@ -5,16 +5,19 @@ import Image from 'next/image';
 import { useUser } from '@clerk/clerk-react';
 import { Button } from '@/components/ui/button';
 import { PlusCircle } from 'lucide-react';
-import { useMutation } from 'convex/react';
+import { useMutation, useQueries } from 'convex/react';
 import { toast } from 'sonner';
 import { api } from '../../../../../convex/_generated/api';
+import { useParams, useRouter } from 'next/navigation';
 
 const Page = () => {
     const {user} = useUser();
+    const params = useParams();
     const create = useMutation(api.document.create);
+    const router = useRouter()
 
     const onCreate = () =>{
-        const promise = create({title:"Untitled"})
+        const promise = create({title:"Untitled"}).then((documentId) => router.push(`/documents/${documentId}`));
         toast.promise(promise,{
             loading:"Creating a new note",
             success:"New Note created",

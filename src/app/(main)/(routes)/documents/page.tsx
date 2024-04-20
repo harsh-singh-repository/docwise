@@ -16,9 +16,9 @@ const Page = () => {
     const create = useMutation(api.document.create);
 
     const onCreate = () =>{
-        const promise = create({title:"Untitled"}).then((documentId)=>{
+        const promise = create({title:"Untitled"}).then((documentId)=>
             router.push(`/document/${documentId}`);
-        })
+        )
         toast.promise(promise,{
             loading:"Creating a new note",
             success:"New Note created",

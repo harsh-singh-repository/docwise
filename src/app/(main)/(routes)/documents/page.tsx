@@ -8,13 +8,13 @@ import { PlusCircle } from 'lucide-react';
 import { useMutation, useQueries } from 'convex/react';
 import { toast } from 'sonner';
 import { api } from '../../../../../convex/_generated/api';
-import { useParams, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 const Page = () => {
+    
     const {user} = useUser();
-    const params = useParams();
+    const router = useRouter();
     const create = useMutation(api.document.create);
-    const router = useRouter()
 
     const onCreate = () =>{
         const promise = create({title:"Untitled"}).then((documentId) => router.push(`/documents/${documentId}`));

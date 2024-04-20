@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import {useRouter} from "next/navigation";
 import Image from 'next/image';
 import { useUser } from '@clerk/clerk-react';
 import { Button } from '@/components/ui/button';
@@ -11,10 +12,13 @@ import { api } from '../../../../../convex/_generated/api';
 
 const Page = () => {
     const {user} = useUser();
+    const router = useRouter();
     const create = useMutation(api.document.create);
 
     const onCreate = () =>{
-        const promise = create({title:"Untitled"})
+        const promise = create({title:"Untitled"}).then((documentId)=>{
+            router.push(`/document/${documentId}`);
+        })
         toast.promise(promise,{
             loading:"Creating a new note",
             success:"New Note created",
